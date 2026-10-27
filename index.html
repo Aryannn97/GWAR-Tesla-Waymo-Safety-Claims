@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2634">
+  <meta name="description" content="A visual guide to reading Tesla and Waymo autonomous-driving safety claims without losing the context behind the numbers.">
+  <title>What Do the Safety Numbers Actually Say? | The Road Read</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="read-progress" aria-hidden="true"><span id="read-progress"></span></div>
+  <a class="skip-link" href="#main">Skip to article</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="The Road Read, back to top"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span>THE ROAD <em>READ</em></span></a>
+    <nav class="top-nav" aria-label="Article sections">
+      <a href="#difference">The difference</a><a href="#claims">The claims</a><a href="#lens">Compare fairly</a><a href="#takeaway">Your checklist</a>
+    </nav>
+    <a class="nav-source" href="#sources">Sources <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow light"><span class="eyebrow-line"></span> A FIELD GUIDE TO THE SELF-DRIVING DEBATE <span class="edition">OCT 2026</span></div>
+          <h1 id="hero-title">What do the <em>safety numbers</em> actually say?</h1>
+          <p class="hero-deck">Tesla and Waymo both publish striking safety claims. Before comparing the numbers, compare the driving.</p>
+          <div class="byline"><span class="byline-avatar" aria-hidden="true">AD</span><span>By <strong>Aryan Dandwekar</strong><small>For Bay Area drivers and robotaxi riders · 5-minute read</small></span></div>
+          <a class="hero-cta" href="#difference">Start reading <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" role="img" aria-label="Illustration of two roads: a Tesla with an attentive human driver, and a Waymo vehicle operating rider-only within its service area.">
+          <div class="art-sun"></div><div class="art-grid"></div>
+          <div class="road road-tesla"><div class="lane-stripes"></div><div class="car car-tesla"><span class="windshield"><b class="driver-head"></b></span><i class="wheel w1"></i><i class="wheel w2"></i></div></div>
+          <div class="road road-waymo"><div class="lane-stripes"></div><div class="car car-waymo"><span class="sensor"></span><span class="windshield"></span><i class="wheel w1"></i><i class="wheel w2"></i></div></div>
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-legend"><span><i class="legend-dot legend-tesla"></i><b>TESLA FSD</b><small>Driver on duty</small></span><span><i class="legend-dot legend-waymo"></i><b>WAYMO</b><small>Rider-only service</small></span></div>
+          <span class="art-caption">Illustration: two different driving arrangements, not a performance ranking.</span>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>01 / THE QUESTION</span><span class="hero-line"></span><span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div>
+    </section>
+
+    <section class="intro section-wrap" id="difference" aria-labelledby="difference-title">
+      <div class="section-kicker"><span>01</span> START WITH THE DRIVER</div>
+      <div class="intro-grid">
+        <div><h2 id="difference-title">Same road. <span>Different responsibility.</span></h2><p class="section-lead">Tesla’s Full Self-Driving (Supervised) is a driver-assistance feature: the person behind the wheel remains responsible. Waymo’s rider-only service uses an automated driving system within the areas where it operates. <a class="cite" href="#source-1" aria-label="Source 1, Tesla manual">[1]</a><a class="cite" href="#source-3" aria-label="Source 3, NHTSA">[3]</a><a class="cite" href="#source-4" aria-label="Source 4, Waymo">[4]</a></p></div>
+        <div class="mode-diagram" aria-label="Tesla requires a supervising driver; Waymo's rider-only service drives without a human driver in its service area">
+          <div class="mode-column tesla-mode"><span class="mode-no">01 / SUPERVISED</span><div class="mode-icon" aria-hidden="true"><svg viewBox="0 0 160 92" fill="none"><path d="M19 66h122l-8-28c-3-9-11-15-20-15H47c-9 0-17 6-20 15l-8 28Z" stroke="currentColor" stroke-width="3"/><path d="M33 49h94" stroke="currentColor" stroke-width="3"/><circle cx="47" cy="68" r="10" fill="currentColor"/><circle cx="113" cy="68" r="10" fill="currentColor"/><circle cx="80" cy="40" r="8" stroke="currentColor" stroke-width="3"/><path d="M64 52c2-8 7-11 16-11s14 3 16 11" stroke="currentColor" stroke-width="3"/></svg></div><h3>Tesla FSD<br><span>(Supervised)</span></h3><p>Human driver monitors and can take over.</p><span class="mode-tag">HUMAN + SYSTEM</span></div>
+          <div class="mode-column waymo-mode"><span class="mode-no">02 / RIDER-ONLY</span><div class="mode-icon" aria-hidden="true"><svg viewBox="0 0 160 92" fill="none"><path d="M19 66h122l-8-28c-3-9-11-15-20-15H47c-9 0-17 6-20 15l-8 28Z" stroke="currentColor" stroke-width="3"/><path d="M33 49h94" stroke="currentColor" stroke-width="3"/><circle cx="47" cy="68" r="10" fill="currentColor"/><circle cx="113" cy="68" r="10" fill="currentColor"/><path d="M73 24v-9h14v9M80 15V8" stroke="currentColor" stroke-width="3"/><path d="M69 42h22" stroke="currentColor" stroke-width="3"/></svg></div><h3>Waymo<br><span>rider-only</span></h3><p>System drives within its service area.</p><span class="mode-tag">SYSTEM ON DUTY</span></div>
+          <div class="mode-divider" aria-hidden="true">≠</div>
+        </div>
+      </div>
+      <div class="quote-strip"><span class="quote-mark" aria-hidden="true">“</span><p>Tesla’s manual says FSD <q>requires a fully attentive driver</q>; Waymo describes rider-only miles as driven <q>without a human driver</q>. <a class="cite" href="#source-1">[1]</a><a class="cite" href="#source-4">[4]</a></p><span class="quote-mark close" aria-hidden="true">”</span></div>
+    </section>
+
+    <section class="claims-section" id="claims" aria-labelledby="claims-title">
+      <div class="section-wrap">
+        <div class="section-kicker"><span>02</span> THE HEADLINE NUMBERS</div>
+        <div class="section-heading-row"><h2 id="claims-title">Two big claims.<br><span>Two different yardsticks.</span></h2><p>Read the small labels before the large type. These figures are each compared with a different group and count a different outcome.</p></div>
+        <div class="claims-grid">
+          <article class="claim-card claim-tesla">
+            <div class="claim-top"><span class="claim-icon">T</span><span>COMPANY-REPORTED · FSD (SUPERVISED)</span></div>
+            <div class="claim-number">7<span>×</span></div>
+            <h3>fewer major and minor collisions</h3>
+            <div class="claim-rule"></div>
+            <dl><div><dt>Versus</dt><dd>Manually driven Tesla vehicles in Tesla’s report</dd></div><div><dt>Counts</dt><dd>Telemetry-defined collision events, including airbag deployments or a specified change in speed</dd></div><div><dt>Remember</dt><dd>A human is still supervising</dd></div></dl>
+            <a href="#source-2" class="source-jump">Read Tesla’s claim and method <span aria-hidden="true">↗</span></a>
+          </article>
+          <div class="claim-middle" aria-label="These numbers are not directly comparable"><div class="not-equal">≠</div><span>NOT A<br>HEAD-TO-HEAD<br>TEST</span></div>
+          <article class="claim-card claim-waymo">
+            <div class="claim-top"><span class="claim-icon">W</span><span>COMPANY-REPORTED · RIDER-ONLY</span></div>
+            <div class="claim-number">82<span>%</span></div>
+            <h3>fewer injury-causing crashes</h3>
+            <div class="claim-rule"></div>
+            <dl><div><dt>Versus</dt><dd>Human-driver benchmark over the same distance in Waymo’s operating cities</dd></div><div><dt>Counts</dt><dd>Crashes involving a reported injury to anyone in the crash</dd></div><div><dt>Remember</dt><dd>Surface-street rider-only miles through June 2026</dd></div></dl>
+            <a href="#source-4" class="source-jump">Read Waymo’s data and method <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <p class="claims-caption"><strong>Read this as:</strong> Both numbers may be useful within their own definitions. Dividing or ranking 7× against 82% would compare different outcomes, baselines and driving arrangements. <a class="cite" href="#source-2">[2]</a><a class="cite" href="#source-4">[4]</a></p>
+      </div>
+    </section>
+
+    <section class="lens-section section-wrap" id="lens" aria-labelledby="lens-title">
+      <div class="section-kicker"><span>03</span> THE COMPARISON LENS</div>
+      <div class="section-heading-row"><h2 id="lens-title">Check the four things<br><span>behind every number.</span></h2><p>Tap each lens to see what changes in the interpretation.</p></div>
+      <div class="lens-layout">
+        <div class="lens-rail" role="tablist" aria-label="Four safety comparison lenses">
+          <button type="button" class="lens-tab active" role="tab" id="tab-driver" aria-selected="true" aria-controls="lens-panel" data-lens="driver"><span>01</span> Who drives? <b aria-hidden="true">↗</b></button>
+          <button type="button" class="lens-tab" role="tab" id="tab-place" aria-selected="false" aria-controls="lens-panel" tabindex="-1" data-lens="place"><span>02</span> Where? <b aria-hidden="true">↗</b></button>
+          <button type="button" class="lens-tab" role="tab" id="tab-outcome" aria-selected="false" aria-controls="lens-panel" tabindex="-1" data-lens="outcome"><span>03</span> What counts? <b aria-hidden="true">↗</b></button>
+          <button type="button" class="lens-tab" role="tab" id="tab-baseline" aria-selected="false" aria-controls="lens-panel" tabindex="-1" data-lens="baseline"><span>04</span> Compared with whom? <b aria-hidden="true">↗</b></button>
+        </div>
+        <div class="lens-panel" id="lens-panel" role="tabpanel" aria-labelledby="tab-driver" tabindex="0">
+          <div class="lens-panel-top"><span id="lens-counter">LENS 01 / 04</span><span class="lens-signal"><i></i> CONTEXT MATTERS</span></div>
+          <div class="lens-visual" id="lens-visual" aria-hidden="true"></div>
+          <h3 id="lens-heading"></h3><p id="lens-copy"></p>
+          <div class="lens-pair"><div><span>TESLA FSD</span><strong id="lens-tesla"></strong></div><div><span>WAYMO RIDER-ONLY</span><strong id="lens-waymo"></strong></div></div>
+          <p class="lens-foot" id="lens-foot"></p>
+          <div class="lens-actions"><span id="lens-progress-label">1 of 4</span><button type="button" id="lens-next">Next lens <span aria-hidden="true">→</span></button></div>
+        </div>
+      </div>
+      <div class="data-caution"><div class="caution-symbol" aria-hidden="true">!</div><p><strong>A crash count is not a crash rate.</strong> Federal crash reports are useful for finding incidents, but NHTSA says the counts are <q>not normalized or adjusted by any measure of exposure</q>, such as miles driven. <a class="cite" href="#source-3">[3]</a></p></div>
+    </section>
+
+    <section class="evidence-section" id="evidence" aria-labelledby="evidence-title">
+      <div class="section-wrap evidence-grid">
+        <div class="evidence-copy"><div class="section-kicker"><span>04</span> A SECOND PAIR OF EYES</div><h2 id="evidence-title">What does <span>independent research</span> add?</h2><p>In a 2026 study, IIHS compared Waymo’s driverless crash involvement with human drivers in the same areas and years. The study found a 68% lower rate of police-reportable crash involvement per mile for the Waymo operations studied. <a class="cite" href="#source-5">[5]</a></p><p class="evidence-small">That is evidence about those deployments and that outcome—not a direct test of Tesla FSD. As the researchers put it, <q>These results apply only to the L4 vehicles in driverless operation that were studied.</q> <a class="cite" href="#source-5">[5]</a></p></div>
+        <figure class="evidence-chart"><figcaption><span>IIHS STUDY · JULY 2026</span><strong>Police-reportable crash involvement <small>per million vehicle miles, indexed</small></strong></figcaption><div class="bars"><div class="bar-row"><span>Human drivers<br><small>same areas and years</small></span><div class="bar-track"><div class="bar human-bar" style="width:100%"></div></div><b>100</b></div><div class="bar-row"><span>Waymo<br><small>driverless operations studied</small></span><div class="bar-track"><div class="bar waymo-bar" style="width:32%"></div></div><b>32</b></div></div><div class="bar-note"><strong>68% lower rate</strong><span>Indexed illustration of the study’s relative finding; 100 is the matched human benchmark, not an absolute crash rate.</span></div><div class="chart-grid" aria-hidden="true"></div></figure>
+      </div>
+      <div class="section-wrap evidence-bottom"><p>Separate IIHS research on partial automation in BMW and Nissan vehicles found little evidence of an extra crash-prevention benefit beyond crash-avoidance features. That finding is a caution about the category, not a Tesla-specific estimate. <a class="cite" href="#source-6">[6]</a></p><p>The NTSB also warns that humans can become poor monitors of automation. Rare severe crashes require more than mileage alone to evaluate, according to RAND’s safety research. <a class="cite" href="#source-7">[7]</a><a class="cite" href="#source-8">[8]</a></p></div>
+    </section>
+
+    <section class="takeaway-section section-wrap" id="takeaway" aria-labelledby="takeaway-title">
+      <div class="takeaway-head"><div><div class="section-kicker"><span>05</span> TAKE THIS WITH YOU</div><h2 id="takeaway-title">A five-question<br><span>safety-claim check.</span></h2></div><p>Use it the next time a company, article or social post calls a vehicle “safer.”</p></div>
+      <ol class="checklist" id="checklist"><li><span class="check-number">01</span><span><strong>Who was responsible for driving?</strong><small>Supervised assistance or rider-only operation?</small></span></li><li><span class="check-number">02</span><span><strong>Where and when were the miles driven?</strong><small>Same streets, traffic, weather and period?</small></span></li><li><span class="check-number">03</span><span><strong>Which crashes count?</strong><small>All contacts, police reports, airbag deployments or injuries?</small></span></li><li><span class="check-number">04</span><span><strong>What is the comparison group?</strong><small>Other Teslas, local human drivers or a national average?</small></span></li><li><span class="check-number">05</span><span><strong>How much exposure is behind the rate?</strong><small>Ask for miles, definitions and an independent check.</small></span></li></ol>
+      <div class="takeaway-footer"><button type="button" class="copy-button" id="copy-checklist">Copy the checklist <span aria-hidden="true">↗</span></button><span class="copy-status" id="copy-status" role="status" aria-live="polite"></span><p><strong>The practical conclusion:</strong> We can learn from each company’s data and independent studies, but a fair Tesla–Waymo verdict needs matched driving conditions, supervision, crash definitions and exposure. <a class="cite" href="#source-3">[3]</a><a class="cite" href="#source-5">[5]</a></p></div>
+    </section>
+
+    <section class="reader-test" aria-labelledby="test-title"><div class="section-wrap test-grid"><div><span class="test-kicker">ONE-MINUTE READER CHECK</span><h2 id="test-title">A post says: “7× versus 82%. Who wins?”</h2><p>What would you say back?</p></div><div class="test-options" role="group" aria-label="Choose an answer"><button type="button" data-answer="tesla">Tesla: 7× is the bigger number.</button><button type="button" data-answer="waymo">Waymo: 82% is the bigger improvement.</button><button type="button" data-answer="context">We need matched definitions and driving conditions first.</button><div class="test-feedback" id="test-feedback" role="status" aria-live="polite" hidden></div></div></div></section>
+
+    <section class="sources-section section-wrap" id="sources" aria-labelledby="sources-title"><div class="section-kicker"><span>06</span> SHOW YOUR WORK</div><div class="sources-heading"><h2 id="sources-title">Sources & <span>methods.</span></h2><p>Figures are snapshots of the linked publications as reviewed October 26, 2026. Company results are labeled as company-reported. Charts and illustrations on this page are original.</p></div><ol class="sources-list"><li id="source-1"><span>[1]</span><div><strong>Tesla, Model Y Owner’s Manual: “Full Self-Driving (Supervised).”</strong><small>System behavior, cameras and the driver’s duty.</small></div><a href="https://www.tesla.com/ownersmanual/modely/en_us/GUID-2CB60804-9CEA-4F4B-8B04-09B991368DC5.html" target="_blank" rel="noopener noreferrer" aria-label="Open Tesla owner manual in a new tab">↗</a></li><li id="source-2"><span>[2]</span><div><strong>Tesla, FSD (Supervised) support and Vehicle Safety Report methodology.</strong><small>7× claim, comparison group and collision definition.</small></div><div class="source-links"><a href="https://www.tesla.com/support/fsd" target="_blank" rel="noopener noreferrer">Claim ↗</a><a href="https://www.tesla.com/fsd/safety" target="_blank" rel="noopener noreferrer">Method ↗</a></div></li><li id="source-3"><span>[3]</span><div><strong>NHTSA, Standing General Order on Crash Reporting.</strong><small>ADS versus Level 2, reporting thresholds and data limits.</small></div><a href="https://www.nhtsa.gov/laws-regulations/standing-general-order-crash-reporting" target="_blank" rel="noopener noreferrer" aria-label="Open NHTSA crash reporting page in a new tab">↗</a></li><li id="source-4"><span>[4]</span><div><strong>Waymo, Safety Impact Data Hub.</strong><small>Rider-only miles and injury comparison through June 2026; methods and limitations.</small></div><a href="https://waymo.com/safety/impact/" target="_blank" rel="noopener noreferrer" aria-label="Open Waymo Safety Impact in a new tab">↗</a></li><li id="source-5"><span>[5]</span><div><strong>E. R. Teoh, D. G. Kidd and L. E. Riexinger, “Rise of the machines,” IIHS, July 2026.</strong><small>Independent matched-area, matched-year crash-involvement study.</small></div><a href="https://www.iihs.org/research-areas/bibliography/ref/2374" target="_blank" rel="noopener noreferrer" aria-label="Open IIHS study in a new tab">↗</a></li><li id="source-6"><span>[6]</span><div><strong>IIHS and HLDI, “Little evidence that partial automation prevents crashes,” July 2024.</strong><small>BMW and Nissan findings; not a Tesla-specific result.</small></div><a href="https://www.iihs.org/news/detail/iihs-hldi-research-finds-little-evidence-that-partial-automation-prevents-crashes" target="_blank" rel="noopener noreferrer" aria-label="Open IIHS partial automation research in a new tab">↗</a></li><li id="source-7"><span>[7]</span><div><strong>NTSB, Vehicle Automation Investigative Outcomes and Recommendations.</strong><small>Driver engagement and monitoring limitations.</small></div><a href="https://www.ntsb.gov/Advocacy/SafetyIssues/Pages/Vehicle-Automations-Investigative-Outcomes.aspx" target="_blank" rel="noopener noreferrer" aria-label="Open NTSB outcomes in a new tab">↗</a></li><li id="source-8"><span>[8]</span><div><strong>N. Kalra and S. M. Paddock, <i>Driving to Safety</i>, RAND, 2016.</strong><small>Why rare injury and fatal crashes are difficult to evaluate from miles alone.</small></div><a href="https://www.rand.org/pubs/research_reports/RR1478.html" target="_blank" rel="noopener noreferrer" aria-label="Open RAND report in a new tab">↗</a></li></ol></section>
+  </main>
+  <footer class="footer"><div class="section-wrap footer-inner"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span>THE ROAD <em>READ</em></span></a><p>Research translated for everyday readers · CMPE 294<br>© 2026 Aryan Dandwekar</p><a href="#top">Back to top ↑</a></div></footer>
+</body>
+</html>
